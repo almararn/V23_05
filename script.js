@@ -24,3 +24,7 @@ const renderWizards = () => {
     document.getElementById('ron').innerHTML =
         `<span style="color:${ronWeasley.hairColor}">${ronWeasley.firstName} ${ronWeasley.lastName}</span>`
 }
+
+document.addEventListener('keydown', (event) => {
+    event.key == 'x' || event.key == 'X' ? renderWizards() : null
+})
